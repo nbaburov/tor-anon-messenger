@@ -284,7 +284,7 @@ class SecureMessenger:
         lock_memory(self)
 
     def generate_key(self):
-        """Generate ECDH key pair for Perfect Forward Secrecy"""
+        """Generate a Fernet key; returned base64-encoded for the connection string"""
         console.print("[yellow]Using Fernet encryption for compatibility[/yellow]")
 
         self.key = Fernet.generate_key()

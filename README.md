@@ -2,6 +2,8 @@
 
 A secure, anonymous messaging application that uses Tor hidden services and end-to-end encryption to provide private communication channels.
 
+> Proof of concept, shared as a reference. Not actively maintained for external contributions, and not audited: do not rely on it for real-world anonymity.
+
 ## Video Showcase
 
 https://github.com/user-attachments/assets/641436fe-7abd-4170-9aea-6da263156596
@@ -283,26 +285,7 @@ pip install -r pentest_requirements.txt
 
 ### Required Python Packages
 
-**For Messenger:**
-
-```
-stem>=1.8.0
-cryptography>=3.0.0
-rich>=10.0.0
-PySocks>=1.7.0
-requests>=2.25.0
-```
-
-**For Security Testing:**
-
-```
-scapy>=2.4.0
-matplotlib>=3.0.0
-seaborn>=0.11.0
-numpy>=1.19.0
-pandas>=1.3.0
-psutil>=5.8.0
-```
+Pinned in [`requirements.txt`](requirements.txt) (messenger) and [`pentest_requirements.txt`](pentest_requirements.txt) (security testing).
 
 ### Usage
 
@@ -754,7 +737,7 @@ This system assumes:
 
 ## Technical Implementation Details
 
-### Security Utilities (Lines 1-80)
+### Security Utilities
 
 #### Core Security Functions
 
@@ -762,7 +745,7 @@ This system assumes:
 -   **`lock_memory(data)`**: Uses mlock to prevent memory pages from being swapped to disk
 -   **Logging Disabled**: All Python logging and urllib3 warnings disabled to prevent metadata leakage
 
-### TorManager Class (Lines 81-272)
+### TorManager Class
 
 #### Purpose
 
@@ -804,7 +787,7 @@ Manages Tor process lifecycle, hidden service creation, and circuit management f
 -   Sends NEWNYM signal to force new circuits
 -   Prevents long-term traffic correlation
 
-### SecureMessenger Class (Lines 273-468)
+### SecureMessenger Class
 
 #### Purpose
 
@@ -872,7 +855,7 @@ Handles end-to-end encryption, message padding, timing obfuscation, and dummy tr
 -   Identifies dummy traffic by "DUMMY:" prefix
 -   Prevents dummy messages from being displayed
 
-### AnonymousServer Class (Lines 469-618)
+### AnonymousServer Class
 
 #### Purpose
 
@@ -908,7 +891,7 @@ Manages server-side operations including client connections, message relay, and 
 -   Closes all client connections
 -   Triggers TorManager and SecureMessenger cleanup
 
-### AnonymousClient Class (Lines 619-829)
+### AnonymousClient Class
 
 #### Purpose
 
@@ -958,7 +941,7 @@ Handles client-side connection establishment, message sending/receiving, and use
 -   Triggers SecureMessenger cleanup
 -   Sets connection flag to false
 
-### Main Application Logic (Lines 830-898)
+### Main Application Logic
 
 #### Purpose
 
