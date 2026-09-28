@@ -25,7 +25,7 @@ def check_tor():
         return True
     except (subprocess.CalledProcessError, FileNotFoundError):
         print(
-            "Tor is not installed. The application will download and run Tor automatically."
+            "Tor is not installed. Install it first (apt install tor / brew install tor)."
         )
         return False
 
