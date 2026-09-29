@@ -30,7 +30,7 @@ One peer runs as a server and publishes a Tor onion service; the others connect 
 Requires Python 3.10+ and Tor (`brew install tor` / `sudo apt install tor`).
 
 ```bash
-git clone https://github.com/nixxxo/tor-anon-messenger.git
+git clone https://github.com/nbaburov/tor-anon-messenger.git
 cd tor-anon-messenger
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
