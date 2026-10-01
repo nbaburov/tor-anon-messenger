@@ -73,4 +73,4 @@ No environment variables or config files. Ports are chosen automatically (SOCKS 
 
 ## License
 
-MIT: see [LICENSE](LICENSE). For education and research; you are responsible for complying with local law.
+[PolyForm Noncommercial 1.0.0](LICENSE): free for any noncommercial use with attribution. Commercial use needs a separate paid license; contact [NB Limited](https://nb-limited.com). For education and research; you are responsible for complying with local law.
