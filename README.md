@@ -2,7 +2,7 @@
 
 A terminal chat that runs over a Tor onion service, with encrypted messages and traffic-analysis countermeasures, plus a packet-capture tool that measures what a network observer can still see.
 
-Research proof of concept (2025). The research write-up is [on Notion](https://nbaburov.notion.site/Research-Document-1cf258cb140c8007bca7fcdd6543120e?pvs=74).
+Research proof of concept (2025). Write-up: [Grading my own anonymous messenger: a D, for the wrong reasons](https://nb.nb-limited.com/writing/grading-anonymous-messenger).
 
 > Shared as a reference. Not actively maintained for external contributions, and not audited: do not rely on it for real-world anonymity.
 
