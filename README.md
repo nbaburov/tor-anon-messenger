@@ -4,7 +4,7 @@ A terminal chat that runs over a Tor onion service, with encrypted messages and 
 
 Research proof of concept (2025).
 
-Write-up: [Untraceable is impossible. Making it hard is not.](https://nb.nb-limited.com/writing/grading-anonymous-messenger)
+Write-up: [Untraceable is impossible. Making it hard is not.](https://nb.nb-limited.com/writing/untraceable-is-impossible-making-it-hard-is-not)
 
 > Shared as a reference. Not actively maintained for external contributions, and not audited: do not rely on it for real-world anonymity.
 
