@@ -2,7 +2,9 @@
 
 A terminal chat that runs over a Tor onion service, with encrypted messages and traffic-analysis countermeasures, plus a packet-capture tool that measures what a network observer can still see.
 
-Research proof of concept (2025). Write-up: [Grading my own anonymous messenger: a D, for the wrong reasons](https://nb.nb-limited.com/writing/grading-anonymous-messenger).
+Research proof of concept (2025).
+
+Write-up: [Untraceable is impossible. Making it hard is not.](https://nb.nb-limited.com/writing/grading-anonymous-messenger)
 
 > Shared as a reference. Not actively maintained for external contributions, and not audited: do not rely on it for real-world anonymity.
 
@@ -73,4 +75,4 @@ No environment variables or config files. Ports are chosen automatically (SOCKS 
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](LICENSE): free for any noncommercial use with attribution. Commercial use needs a separate paid license; contact [NB Limited](https://nb-limited.com). For education and research; you are responsible for complying with local law.
+[PolyForm Noncommercial 1.0.0](LICENSE): free for any noncommercial use with attribution. For education and research; you are responsible for complying with local law. This repository is a showcase, so it doesn't take issues or pull requests. Forks are welcome under the license. Commercial use needs a separate paid license; contact [NB Limited](https://nb-limited.com).
